@@ -1,9 +1,9 @@
 import { useContext } from 'react';
-
+import { useNavigate } from 'react-router-dom';
 import { CartContext } from '../../contexts/cart.context';
 
 import CheckoutItem from '../../components/checkout-item/checkout-item.component';
-
+import Button from '../../components/button/button.component';
 import {
   CheckoutContainer,
   CheckoutHeader,
@@ -13,21 +13,25 @@ import {
 
 const Checkout = () => {
   const { cartItems, cartTotal } = useContext(CartContext);
+  const navigate = useNavigate();
+  const goToCheckoutHandler = () => {
+    navigate('/confirmation');
+  };
 
   return (
     <CheckoutContainer>
       <CheckoutHeader>
         <HeaderBlock>
-          <span>Product</span>
+          <span>Mentor</span>
         </HeaderBlock>
         <HeaderBlock>
-          <span>Description</span>
+          <span>Schedule</span>
         </HeaderBlock>
         <HeaderBlock>
           <span>Quantity</span>
         </HeaderBlock>
         <HeaderBlock>
-          <span>Price</span>
+          <span>Name</span>
         </HeaderBlock>
         <HeaderBlock>
           <span>Remove</span>
@@ -36,8 +40,9 @@ const Checkout = () => {
       {cartItems.map((cartItem) => (
         <CheckoutItem key={cartItem.id} cartItem={cartItem} />
       ))}
-      <Total>Total: ${cartTotal}</Total>
+    <Button onClick={goToCheckoutHandler}>Confirm</Button>
     </CheckoutContainer>
+    
   );
 };
 

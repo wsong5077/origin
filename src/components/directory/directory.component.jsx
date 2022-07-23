@@ -5,33 +5,33 @@ import { DirectoryContainer } from './directory.styles';
 const categories = [
   {
     id: 1,
-    title: 'hats',
-    imageUrl: 'https://i.ibb.co/cvpntL1/hats.png',
-    route: 'shop/hats',
+    title: 'Code',
+    imageUrl: 'https://i.ibb.co/KmnM49T/0-k-BHp-Kva09-As-Gj7-RQ.jpg',
+    route: 'shop/code',
   },
   {
     id: 2,
-    title: 'jackets',
-    imageUrl: 'https://i.ibb.co/px2tCc3/jackets.png',
-    route: 'shop/jackets',
+    title: 'Resume',
+    imageUrl: 'https://i.ibb.co/Bg45Xcn/i-Stock-000033354382-Medium-56b096ac5f9b58b7d0243afd.jpg',
+    route: 'shop/resume',
   },
   {
     id: 3,
-    title: 'sneakers',
-    imageUrl: 'https://i.ibb.co/0jqHpnp/sneakers.png',
-    route: 'shop/sneakers',
+    title: 'Career',
+    imageUrl: 'https://i.ibb.co/hyyLtLb/career-counseling-56a0f2ae5f9b58eba4b575ac.jpg',
+    route: 'shop/career',
   },
   {
     id: 4,
-    title: 'womens',
-    imageUrl: 'https://i.ibb.co/GCCdy8t/womens.png',
-    route: 'shop/womens',
+    title: 'Coding Interview',
+    imageUrl: 'https://i.ibb.co/cLkYPQ4/1-j-Iv-JUz9yl2hze3-DRani-Xsw.jpg',
+    route: 'shop/coding interview',
   },
   {
     id: 5,
-    title: 'mens',
-    imageUrl: 'https://i.ibb.co/R70vBrQ/men.png',
-    route: 'shop/mens',
+    title: 'Behavorial Interview',
+    imageUrl: 'https://i.ibb.co/dWQJ9kz/85.jpg',
+    route: 'shop/behavorial interview',
   },
 ];
 
